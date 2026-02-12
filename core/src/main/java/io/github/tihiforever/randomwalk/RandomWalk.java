@@ -3,27 +3,32 @@ package io.github.tihiforever.randomwalk;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import java.util.ArrayList;
 import java.util.Random;
 
 
 public class RandomWalk extends ApplicationAdapter {
 
+    private SpriteBatch batch;
+    private BitmapFont font;
     private ShapeRenderer shapeRenderer;
     private Random random;
 
     private float x, y;
     private float stepSize = 5f;
 
-    private static final int MAX_STEPS = 10000;
+    private static final int MAX_STEPS = 100000000;
     private float[][] path;
     private int stepCount = 0;
 
     @Override
     public void create() {
         shapeRenderer = new ShapeRenderer();
+        batch = new SpriteBatch();
         random = new Random();
+        font = new BitmapFont();
 
         x = Gdx.graphics.getWidth() / 2f;
         y = Gdx.graphics.getHeight() / 2f;
@@ -63,17 +68,19 @@ public class RandomWalk extends ApplicationAdapter {
         shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
 
         for (int i = 1; i < stepCount; i++) {
-            shapeRenderer.line(
-                path[i - 1][0], path[i - 1][1],
-                path[i][0], path[i][1]
-            );
+            shapeRenderer.line(path[i - 1][0], path[i - 1][1], path[i][0], path[i][1]);
         }
 
         shapeRenderer.end();
+
+        batch.begin();
+        font.draw(batch,"Steps: "+stepCount, 0,20);
+        batch.end();
     }
 
     @Override
     public void dispose() {
         shapeRenderer.dispose();
+        batch.dispose();
     }
 }
