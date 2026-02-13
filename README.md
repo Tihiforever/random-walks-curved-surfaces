@@ -1,5 +1,8 @@
 # random-walks-curved-surfaces
 
+# What I am currently working on
+I'm going to implement torus geometry and stretching with doing it based of the y posistion
+
 A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
 This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
