@@ -4,6 +4,9 @@ A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://git
 
 This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
 
+## What I am currently working on
+I'm going to implement torus geometry and stretching by doing it based on the y position
+
 ## Platforms
 
 - `core`: Main module with the application logic shared by all platforms.
