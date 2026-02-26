@@ -28,7 +28,7 @@ public class RandomWalk extends ApplicationAdapter {
 
     private float R = 3f;      // major radius
     private float r = 1f;      // minor radius
-    private float baseStep = 0.01f;
+    private float baseStep = 0.1f;
 
     @Override
     public void create() {
