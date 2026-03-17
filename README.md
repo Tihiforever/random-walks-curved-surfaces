@@ -1,36 +1,19 @@
-# random-walks-curved-surfaces
+# Random-walks-curved-surfaces
+An exploration of Random Walks and how they are used and can be manipulated.
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+# Work Log
+09/02/26: We decided that I would program a random walk 2d generator, after halfterm to discuss on a Microsoft Teams call what else can be added and done  
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+10/02/26: created my git repository and thought about the design of it and after a short discussion with my maths teacher he suggested I learn polar coordinates and that made me think about how this is project is like an ant walking on a piece of paper that is twisted in lots of different ways as that’s how random walking in a 2d shape is as the 2d grid when in a non Euclidian form  allows for different rules of shapes when a 2d plane is twisted and stretched in a 3d or a higher dimension like how some scientist think the universe is. This allowed me to think about how I would program this  
 
-## What I am currently working on
-I'm going to implement torus geometry and stretching by doing it based on the y position
+11/03/26: finished everything outlined, waiting for a response as to what to do next, as I have visualised random walking on a 3d torus, but it doesn’t work truly as the walker can go inside the torus wich I visualised in Desmos (here https://www.desmos.com/3d/j2sfzxhzr9)
 
-## Platforms
+17/03/26: Had a discussion on Microsoft Teams explaining my work and the basics of a random walk, and how it is utilised like in modelling gas particles in phyiscs as taking the walker to be a particle in a gas, it moves around randomly. We also discussed how a random walk in 1D follows a binomial distribution and, after an infinite number of steps, approaches a normal distribution. After this, we discussed what to do next, where it was decided to record lots of random walkers and their distances from an origin and then plot this data relative to the number of steps taken and explore the trend and how the number of steps correlates to the distance from the origin. Then we discuss ed comparing this infinite plane to a bounded 2d torus and how the distance from the start changes when the walker can "loop" around and being able to graph this to compare the difference.
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
 
-## Gradle
-
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
-
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
-
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+# Sources
+https://en.wikipedia.org/wiki/Random_walk
+https://en.wikipedia.org/wiki/Torus
+https://mathworld.wolfram.com/Torus.html
+https://math.uchicago.edu/~may/REU2024/REUPapers/Courbe.pdf
+https://math.stackexchange.com/questions/1578756/parameterization-of-a-torus
