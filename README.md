@@ -54,4 +54,5 @@ https://math.uchicago.edu/~may/REU2024/REUPapers/Courbe.pdf
 https://community.wolfram.com/groups/-/m/t/82377
 https://math.stackexchange.com/questions/1578756/parameterization-of-a-torus
 https://www.wired.com/2017/03/hey-can-find-pi-random-walk-heres/
+https://demonstrations.wolfram.com/RandomWalkGeneratedByTheDigitsOfPi/
 https://math.stackexchange.com/questions/103142/expected-value-of-random-walk
