@@ -10,6 +10,15 @@ An exploration of Random Walks and how they are used and can be manipulated.
 
 17/03/26: Had a discussion on Microsoft Teams explaining my work and the basics of a random walk, and how it is utilised, like in modelling gas particles in phyiscs as taking the walker to be a particle in a gas, it moves around randomly. We also discussed how a random walk in 1D follows a binomial distribution and, after an infinite number of steps, approaches a normal distribution. After this, we discussed what to do next, where it was decided to record lots of random walkers and their distances from an origin and then plot this data relative to the number of steps taken and explore the trend and how the number of steps correlates to the distance from the origin. Then we discuss ed comparing this infinite plane to a bounded 2d torus and how the distance from the start changes when the walker can "loop" around and be able to graph this to compare the difference.
 
+23/03/26: created a second visualisation that allowed more customisabilty like adding extra walkers and changing step size, along with changing the number of steps it can complete. Annoyingly, I can't upload the files, only screenshots, as this GitHub repo is set to the first prototype and idk how to change it, but I will try to fix this. (below are images and videos of the latest demo i am going to make it write to a text file that can be used as a data table thing for heatmaps and graphs)
+
+<img width="632" height="508" alt="image" src="https://github.com/user-attachments/assets/c1bcbf98-a538-48df-b94e-eea0567dbedf" />
+<img width="628" height="505" alt="image" src="https://github.com/user-attachments/assets/27c59b96-e5f9-4c8f-8094-127d4138f170" />
+
+
+https://github.com/user-attachments/assets/a894a74e-201b-47da-bbde-043958e76675
+
+
 # To-Do:
 -build another random walk:
   -that can run multiple walks with a set n amount of steps or be able to run forever and run till an input is pressed.
