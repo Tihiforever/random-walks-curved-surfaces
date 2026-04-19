@@ -20,7 +20,8 @@ An exploration of Random Walks and how they are used and can be manipulated.
 |---|---|
 | ![image](https://github.com/user-attachments/assets/c1bcbf98-a538-48df-b94e-eea0567dbedf) | ![image](https://github.com/user-attachments/assets/27c59b96-e5f9-4c8f-8094-127d4138f170) |
 
-![video]https://github.com/user-attachments/assets/a894a74e-201b-47da-bbde-043958e76675
+<video src="https://github.com/user-attachments/assets/a894a74e-201b-47da-bbde-043958e76675" controls width="100%" muted autoplay>
+</video>
 
 **18/04/26:** Built a dedicated data collection simulator that could be configured for the number of steps and walkers, exporting a CSV per walker with step, x, y, and distance from origin. Positions are normalised so the origin is always (0, 0) and step size is always 1 unit regardless of pixel size, making data from different runs directly comparable. Also started building the Python script to visualise all collected data. Shown below is the 1000 walker, 10000 step simulation completing, and an example of the newer visualiser with 100 walkers and 100 steps.
 
@@ -60,7 +61,9 @@ When exploring random walking in 2D, I discovered the representation of pi as a 
 | ![image](https://github.com/user-attachments/assets/5eeac821-4a4a-4be1-b2df-3cb10b1e8b95) | ![image](https://github.com/user-attachments/assets/6576582c-546d-4123-a8bb-d2d31e1a132d) |
 | Base: 2 · Digits: 2090 | Base: 10 · Digits: 300 |
 
-![video]https://github.com/user-attachments/assets/a570904e-4ef5-4def-ab40-8af0d44794f6
+<video src="https://github.com/user-attachments/assets/a570904e-4ef5-4def-ab40-8af0d44794f6" controls width="100%" muted autoplay>
+</video>
+
 
 Thinking about what different surfaces a random walker could move on led me naturally into geometry. A classic football is a great example of this, as it's covered by pentagons and hexagons stitched together, which is actually a truncated icosahedron, one of the 13 [Archimedean solids](https://en.wikipedia.org/wiki/Archimedean_solid). Archimedean solids are convex polyhedra whose faces are regular polygons and whose vertices are all identical. In 3D, the football's surface is a finite tiling of two polygon types. This made me think about what happens when you flatten that idea out onto an infinite plane.
 
@@ -70,7 +73,7 @@ From tilings, I then discovered [tessellations](https://en.wikipedia.org/wiki/Te
 
 ---
 
-# Results — 2D Unbounded Plane
+# Results - 2D Unbounded Plane
 
 > 1000 walkers simulated on a 2D square lattice across five runs, recording average distance from origin, distribution of final positions, and final position density at each step count.
 
