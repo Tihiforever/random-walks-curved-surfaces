@@ -8,11 +8,11 @@ An exploration of Random Walks and how they are used and can be manipulated.
 
 **09/02/26:** We decided that I would program a random walk 2D generator, after halfterm to discuss on a Microsoft Teams call what else can be added and done.
 
-**10/02/26:** Created my git repository and thought about the design of it and after a short discussion with my maths teacher he suggested I learn polar coordinates and that made me think about how this project is like an ant walking on a piece of paper that is twisted in lots of different ways — as that's how random walking in a 2D shape is, as the 2D grid when in a non-Euclidean form allows for different rules of shapes when a 2D plane is twisted and stretched in a 3D or higher dimension, like how some scientists think the universe is. This allowed me to think about how I would program this.
+**10/02/26:** Created my git repository and thought about the design of it and after a short discussion with my maths teacher he suggested I learn polar coordinates and that made me think about how this project is like an ant walking on a piece of paper that is twisted in lots of different ways, as that's how random walking in a 2D shape is, as the 2D grid when in a non-Euclidean form allows for different rules of shapes when a 2D plane is twisted and stretched in a 3D or higher dimension, like how some scientists think the universe is. This allowed me to think about how I would program this.
 
 **11/03/26:** Finished everything outlined, waiting for a response as to what to do next. I have visualised random walking on a 3D torus, but it doesn't work truly as the walker can go inside the torus, which I visualised in Desmos ([here](https://www.desmos.com/3d/j2sfzxhzr9)).
 
-**17/03/26:** Had a discussion on Microsoft Teams explaining my work and the basics of a random walk, and how it is utilised, like in modelling gas particles in physics — taking the walker to be a particle in a gas, it moves around randomly. We also discussed how a random walk in 1D follows a binomial distribution and, after an infinite number of steps, approaches a normal distribution. After this, we discussed what to do next, where it was decided to record lots of random walkers and their distances from an origin and then plot this data relative to the number of steps taken and explore the trend and how the number of steps correlates to the distance from the origin. Then we discussed comparing this infinite plane to a bounded 2D torus and how the distance from the start changes when the walker can "loop" around, and graphing this to compare the difference.
+**17/03/26:** Had a discussion on Microsoft Teams explaining my work and the basics of a random walk, and how it is utilised, like in modelling gas particles in physics, taking the walker to be a particle in a gas, it moves around randomly. We also discussed how a random walk in 1D follows a binomial distribution and, after an infinite number of steps, approaches a normal distribution. After this, we discussed what to do next, where it was decided to record lots of random walkers and their distances from an origin and then plot this data relative to the number of steps taken and explore the trend and how the number of steps correlates to the distance from the origin. Then we discussed comparing this infinite plane to a bounded 2D torus and how the distance from the start changes when the walker can "loop" around, and graphing this to compare the difference.
 
 **23/03/26:** Created a second visualisation that allowed more customisability like adding extra walkers and changing step size, along with changing the number of steps it can complete. Annoyingly, I can't upload the files, only screenshots, as this GitHub repo is set to the first prototype and idk how to change it, but I will try to fix this.
 
@@ -20,7 +20,7 @@ An exploration of Random Walks and how they are used and can be manipulated.
 |---|---|
 | ![image](https://github.com/user-attachments/assets/c1bcbf98-a538-48df-b94e-eea0567dbedf) | ![image](https://github.com/user-attachments/assets/27c59b96-e5f9-4c8f-8094-127d4138f170) |
 
-https://github.com/user-attachments/assets/a894a74e-201b-47da-bbde-043958e76675
+![video]https://github.com/user-attachments/assets/a894a74e-201b-47da-bbde-043958e76675
 
 **18/04/26:** Built a dedicated data collection simulator that could be configured for the number of steps and walkers, exporting a CSV per walker with step, x, y, and distance from origin. Positions are normalised so the origin is always (0, 0) and step size is always 1 unit regardless of pixel size, making data from different runs directly comparable. Also started building the Python script to visualise all collected data. Shown below is the 1000 walker, 10000 step simulation completing, and an example of the newer visualiser with 100 walkers and 100 steps.
 
@@ -49,9 +49,9 @@ https://github.com/user-attachments/assets/a894a74e-201b-47da-bbde-043958e76675
 
 ## Self Exploration
 
-I have discovered a love for geometry and topology, and how distances are affected on curved surfaces. This led me to research how random walks are used in different dimensions — in 1D, over a large number of steps the walker forms a binomial distribution, which approaches a normal distribution over an infinite number of steps.
+I have discovered a love for geometry and topology, and how distances are affected on curved surfaces. This led me to research how random walks are used in different dimensions. In 1D, over a large number of steps, the walker forms a binomial distribution, which approaches a normal distribution over an infinite number of steps.
 
-When exploring random walking in 2D, I discovered the representation of pi as a random walk and how it changes when the length of pi changes, the base of pi changing, and the difference between using mod 4 and not.
+When exploring random walking in 2D, I discovered the representation of pi as a random walk and how it changes when the length of pi changes, the base of pi changes, and the difference between using mod 4 and not.
 
 | | |
 |---|---|
@@ -60,13 +60,13 @@ When exploring random walking in 2D, I discovered the representation of pi as a 
 | ![image](https://github.com/user-attachments/assets/5eeac821-4a4a-4be1-b2df-3cb10b1e8b95) | ![image](https://github.com/user-attachments/assets/6576582c-546d-4123-a8bb-d2d31e1a132d) |
 | Base: 2 · Digits: 2090 | Base: 10 · Digits: 300 |
 
-https://github.com/user-attachments/assets/a570904e-4ef5-4def-ab40-8af0d44794f6
+![video]https://github.com/user-attachments/assets/a570904e-4ef5-4def-ab40-8af0d44794f6
 
-Thinking about what different surfaces a random walker could move on led me naturally into geometry. A football is a great example of this — it is covered by pentagons and hexagons stitched together, which is actually a truncated icosahedron, one of the 13 [Archimedean solids](https://en.wikipedia.org/wiki/Archimedean_solid). Archimedean solids are convex polyhedra whose faces are regular polygons and whose vertices are all identical — in 3D, the football's surface is a finite tiling of two polygon types. This made me think about what happens when you flatten that idea out onto an infinite plane.
+Thinking about what different surfaces a random walker could move on led me naturally into geometry. A classic football is a great example of this, as it's covered by pentagons and hexagons stitched together, which is actually a truncated icosahedron, one of the 13 [Archimedean solids](https://en.wikipedia.org/wiki/Archimedean_solid). Archimedean solids are convex polyhedra whose faces are regular polygons and whose vertices are all identical. In 3D, the football's surface is a finite tiling of two polygon types. This made me think about what happens when you flatten that idea out onto an infinite plane.
 
-This led me to [Euclidean tilings by convex regular polygons](https://en.wikipedia.org/wiki/Euclidean_tilings_by_convex_regular_polygons). There are only 3 regular tilings of the plane (where every tile is the same regular polygon): the triangular (3⁶), square (4⁴), and hexagonal (6³) tilings. Beyond those, there are 8 semiregular or Archimedean tilings — using two or more types of regular polygons but with every vertex identical. The hexagonal tiling is particularly interesting because it is the most efficient way to divide a plane into equal areas with the least perimeter, which is why honeycombs use it. A random walker on a triangular tiling has 6 neighbours at each vertex, on a square tiling has 4, and on a hexagonal tiling has only 3 — and that difference in vertex degree directly changes how quickly the walker can spread out, which is exactly what this project investigates.
+This led me to [Euclidean tilings by convex regular polygons](https://en.wikipedia.org/wiki/Euclidean_tilings_by_convex_regular_polygons). There are only 3 regular tilings of the plane (where every tile is the same regular polygon): the triangular (3⁶), square (4⁴), and hexagonal (6³) tilings. Beyond those, there are 8 semiregular or Archimedean tilings which use two or more types of regular polygons, but with every vertex identical. The hexagonal tiling is particularly interesting because it is the most efficient way to divide a plane into equal areas with the least perimeter, which is why honeycombs use it. A random walker on a triangular tiling has 6 neighbours at each vertex, on a square tiling has 4, and on a hexagonal tiling has only 3, and that difference in vertex degree directly changes how quickly the walker can spread out, which is exactly what this project investigates.
 
-From tilings I then discovered [tessellations](https://en.wikipedia.org/wiki/Tessellation) more broadly — the covering of a surface using one or more geometric shapes with no gaps or overlaps. Tessellations extend far beyond regular polygons into aperiodic tilings like Penrose tilings, which never repeat but still fill the plane perfectly, and into hyperbolic geometry where the rules of Euclidean space no longer apply. This opened up the question of what a random walk looks like on a non-repeating or hyperbolic surface, which feeds directly into the later stages of this project.
+From tilings, I then discovered [tessellations](https://en.wikipedia.org/wiki/Tessellation) more broadly, the covering of a surface using one or more geometric shapes with no gaps or overlaps. Tessellations extend far beyond regular polygons into aperiodic tilings like Penrose tilings, which never repeat but still fill the plane perfectly, and into hyperbolic geometry where the rules of Euclidean space no longer apply. This opened up the question of what a random walk looks like on a non-repeating or hyperbolic surface, which feeds directly into the later stages of this project.
 
 ---
 
@@ -100,13 +100,13 @@ All gradients are within 2% of the theoretical value of **0.5**, with R² > 0.99
 | 5000 | 61.65 | 70.71 | 12.8% |
 | 10000 | 91.17 | 100.00 | 8.8% |
 
-The mean consistently sits slightly below √n — this is expected as distance is always positive and the distribution is right-skewed, pulling the mean below the RMS value.
+The mean consistently sits slightly below √n, this is expected as distance is always positive and the distribution is right-skewed, pulling the mean below the RMS value.
 
 ---
 
 ## Overall Data Summary
 
-The three plots below show all five runs together. The combined line graph shows every run following the same √n curve regardless of step count. The two scatter plots show the average distance per run with ±1 standard deviation error bars — the first using only the final step distance, the second averaging across all steps.
+The three plots below show all five runs together. The combined line graph shows every run following the same √n curve regardless of step count. The two scatter plots show the average distance per run with ±1 standard deviation error bars, with the first using only the final step distance and the second averaging across all steps.
 
 | Combined line — all runs | Average final distance per run |
 |--------------------------|-------------------------------|
@@ -134,7 +134,7 @@ The average distance grows as a smooth √n curve in all five runs. The blue lin
 
 ## Log-Log Plots
 
-A straight line with gradient 0.5 on a log-log plot is the mathematical proof of √n growth.
+A straight line with a gradient of 0.5 on a log-log plot is the mathematical proof of √n growth.
 
 | 100 steps | 500 steps |
 |-----------|-----------|
@@ -162,7 +162,7 @@ The final distances follow a right-skewed distribution in all runs, with the pea
 
 ## Final Position Heatmaps
 
-The density of final positions forms a radially symmetric blob centred on the origin. The dotted white circle marks the expected RMS distance √n — the high-density region sits inside this circle in every run, visually confirming the √n relationship.
+The density of final positions forms a symmetric blob centred on the origin. The dotted white circle marks the expected RMS distance √n, the high-density region sits inside this circle in every run, visually confirming the √n relationship.
 
 | 100 steps | 500 steps |
 |-----------|-----------|
@@ -188,18 +188,18 @@ This serves as the **baseline** for comparison against the bounded 2D torus, whe
 
 ## Sources
 
-- [Wikipedia — Random Walk](https://en.wikipedia.org/wiki/Random_walk)
-- [Wikipedia — Torus](https://en.wikipedia.org/wiki/Torus)
-- [Wikipedia — Euclidean Tilings by Convex Regular Polygons](https://en.wikipedia.org/wiki/Euclidean_tilings_by_convex_regular_polygons)
-- [Wikipedia — Archimedean Solid](https://en.wikipedia.org/wiki/Archimedean_solid)
-- [Wikipedia — Tessellation](https://en.wikipedia.org/wiki/Tessellation)
-- [Wolfram MathWorld — Torus](https://mathworld.wolfram.com/Torus.html)
-- [Wolfram MathWorld — Tessellation](https://mathworld.wolfram.com/Tessellation.html)
-- [Wolfram MathWorld — Semiregular Tessellation](https://mathworld.wolfram.com/SemiregularTessellation.html)
-- [REU Paper — Courbe](https://math.uchicago.edu/~may/REU2024/REUPapers/Courbe.pdf)
+- [Wikipedia - Random Walk](https://en.wikipedia.org/wiki/Random_walk)
+- [Wikipedia - Torus](https://en.wikipedia.org/wiki/Torus)
+- [Wikipedia - Euclidean Tilings by Convex Regular Polygons](https://en.wikipedia.org/wiki/Euclidean_tilings_by_convex_regular_polygons)
+- [Wikipedia - Archimedean Solid](https://en.wikipedia.org/wiki/Archimedean_solid)
+- [Wikipedia - Tessellation](https://en.wikipedia.org/wiki/Tessellation)
+- [Wolfram MathWorld - Torus](https://mathworld.wolfram.com/Torus.html)
+- [Wolfram MathWorld - Tessellation](https://mathworld.wolfram.com/Tessellation.html)
+- [Wolfram MathWorld - Semiregular Tessellation](https://mathworld.wolfram.com/SemiregularTessellation.html)
+- [REU Paper - Courbe](https://math.uchicago.edu/~may/REU2024/REUPapers/Courbe.pdf)
 - [Wolfram Community](https://community.wolfram.com/groups/-/m/t/82377)
-- [Math StackExchange — Parameterization of a Torus](https://math.stackexchange.com/questions/1578756/parameterization-of-a-torus)
-- [Math StackExchange — Expected Value of Random Walk](https://math.stackexchange.com/questions/103142/expected-value-of-random-walk)
+- [Math StackExchange - Parameterisation of a Torus](https://math.stackexchange.com/questions/1578756/parameterization-of-a-torus)
+- [Math StackExchange - Expected Value of Random Walk](https://math.stackexchange.com/questions/103142/expected-value-of-random-walk)
 - [Wired — Pi as a Random Walk](https://www.wired.com/2017/03/hey-can-find-pi-random-walk-heres/)
 - [Wolfram Demonstrations — Random Walk from Digits of Pi](https://demonstrations.wolfram.com/RandomWalkGeneratedByTheDigitsOfPi/)
 - [Grünbaum & Shephard — Tilings by Regular Polygons (1977)](https://doi.org/10.2307/2689529)
