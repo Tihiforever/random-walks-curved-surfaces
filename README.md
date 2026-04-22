@@ -118,11 +118,11 @@ The three plots below show all five runs together. The combined line graph shows
 
 | Combined line — all runs | Average final distance per run |
 |--------------------------|-------------------------------|
-| ![image]("https://github.com/user-attachments/assets/da7348ff-809d-4d8e-9334-6e54512e74d9") | ![image]("https://github.com/user-attachments/assets/ac6d1645-4283-4b24-b4de-893da2be4bf3") |
+| ![image]("https://github.com/user-attachments/assets/a0358a61-bf64-4977-86bc-6e4c02df8235") | ![image]("https://github.com/user-attachments/assets/8ab04178-9083-4380-92b1-a6878adb4c52") |
 
 | Average distance across all steps per run |
 |------------------------------------------|
-| ![image]("https://github.com/user-attachments/assets/cdcfce9a-c65c-4b75-92de-668501034f90") |
+| ![image]("https://github.com/user-attachments/assets/dd0291b7-0255-4a6a-9278-6f9670cab144") |
 
 ---
 
